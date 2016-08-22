@@ -12,7 +12,10 @@ You may install via vim-plug, if you insert the following in your dotfile.
 ```vim
 Plug 'TheSovietStorm/vim-radio'
 ```
-The manual way would be to copy vim-radio.py into ~/.config/nvim/autoload/vim-radio/vim-radio/ and edit the streams.csv to contain your favorite streams  in the form of 
+The manual way would be to copy vim-radio.py into ~/.config/nvim/autoload/vim-radio/vim-radio/ 
+
+### Adding Streams
+Add your desired Stream to streams.csv in ~/.config/nvim/autoload/vim-radio/vim-radio in the form of:
 ```csv
 "http://www.blabla.m3u"
 "http://somethingelse.m3u"
