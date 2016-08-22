@@ -1,11 +1,18 @@
-import os                                                                                                                                                                       
+import os                 
+import csv
+import platform
 import argparse
 from subprocess import call
-streamlist=[
-#paste stream address here
-]
+
+with open('streams.csv', 'r') as f:
+  reader = csv.reader(f)
+  streamlist = list(reader)
 parser = argparse.ArgumentParser()
 parser.add_argument("n")
 args=parser.parse_args()
 number=int(args.n)
-call(["/Applications/VLC.app/Contents/MacOS/VLC", "-I", "rc",streamlist[number]])
+stream = streamlist[number][0]
+if platform.system() == 'Darwin':
+  call(["/Applications/VLC.app/Contents/MacOS/VLC", "-I", "rc",stream)
+elif platform.system() == 'Linux':
+  call(["vlc", "-I", "rc",stream)
