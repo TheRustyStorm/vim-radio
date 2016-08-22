@@ -13,6 +13,6 @@ args=parser.parse_args()
 number=int(args.n)
 stream = streamlist[number][0]
 if platform.system() == 'Darwin':
-  call(["/Applications/VLC.app/Contents/MacOS/VLC", "-I", "rc",stream)
+  call(["/Applications/VLC.app/Contents/MacOS/VLC", "-I", "rc",stream])
 elif platform.system() == 'Linux':
-  call(["vlc", "-I", "rc",stream)
+  call(["vlc", "-I", "rc",stream])
