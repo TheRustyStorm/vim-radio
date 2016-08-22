@@ -3,7 +3,7 @@ Listen to internet radio in neovim
 
 ### What is this
 With this plugin you are able to listen to radio-streams inside your favorite text editor.
-It currently only works on OSX and Neovim, but as soon as i learn vimscript i will rework it (eventually).
+It currently only works on OSX or Linux with Neovim, but as soon as i learn vimscript i will rework it (eventually).
 
 ### Installation
 You need to have VLC and Neovim installed.
@@ -12,7 +12,12 @@ You may install via vim-plug, if you insert the following in your dotfile.
 ```vim
 Plug 'TheSovietStorm/vim-radio'
 ```
-The manual way would be to copy vim-radio.py into ~/.config/nvim/autoload/vim-radio/vim-radio/ and edit the streamlist to contain your favorite streams  in the form of ["http://www.blabla.m3u", "http://somethingelse.m3u", "http://iTriedOnlyM3U.m3u].
+The manual way would be to copy vim-radio.py into ~/.config/nvim/autoload/vim-radio/vim-radio/ and edit the streams.csv to contain your favorite streams  in the form of 
+```csv
+"http://www.blabla.m3u"
+"http://somethingelse.m3u"
+"http://iTriedOnlyM3U.m3u"
+```
 
 To be able to listen to the music in background we need the async jobs from neovim, and for convenience you can 
 add the following to your nvim dotfiles.  
