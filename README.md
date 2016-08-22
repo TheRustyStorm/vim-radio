@@ -13,7 +13,7 @@ in the form of ["http://www.blabla.m3u", "http://somethingelse.m3u", "http://iTr
 To be able to listen to the music in background we need the async jobs from neovim, and for convenience you can 
 add the following to your nvim dotfiles.  
 ```vim
-nmap <leader>r :let job1 = jobstart(['bash','-c','python3 ~/.config/nvim/autoload/vim-radio/Plugin.py 0'])
+nmap <leader>r :let job1 = jobstart(['bash','-c','python3 ~/.config/nvim/autoload/vim-radio/vim-radio.py 0'])
 nmap <leader>s :call jobstop(job1)<CR>
 ```
 When you press <leader>r you can either listen to the first stream provided, by pressing <CR> or changing the '0' to any
