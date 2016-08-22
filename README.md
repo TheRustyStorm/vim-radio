@@ -7,8 +7,12 @@ It currently only works on OSX and Neovim, but as soon as i learn vimscript i wi
 
 ### Installation
 You need to have VLC and Neovim installed.
-copy vim-radio.py into ~/.config/nvim/autoload/vim-radio/ and edit the streamlist to contain your favorite streams 
-in the form of ["http://www.blabla.m3u", "http://somethingelse.m3u", "http://iTriedOnlyM3U.m3u].
+
+You may install via vim-plug, if you insert the following in your dotfile.
+```vim
+Plug 'TheSovietStorm/vim-radio'
+```
+The manual way would be to copy vim-radio.py into ~/.config/nvim/autoload/vim-radio/vim-radio/ and edit the streamlist to contain your favorite streams  in the form of ["http://www.blabla.m3u", "http://somethingelse.m3u", "http://iTriedOnlyM3U.m3u].
 
 To be able to listen to the music in background we need the async jobs from neovim, and for convenience you can 
 add the following to your nvim dotfiles.  
