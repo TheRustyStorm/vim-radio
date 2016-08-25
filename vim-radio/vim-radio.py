@@ -4,7 +4,7 @@ import platform
 import argparse
 from subprocess import call
 
-with open('streams.csv', 'r') as f:
+with open('~/.config/nvim/autoload/vim-radio/vim-radio/streams.csv', 'r') as f:
   reader = csv.reader(f)
   streamlist = list(reader)
 parser = argparse.ArgumentParser()
