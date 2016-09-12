@@ -21,10 +21,10 @@ Add your desired Stream to streams.csv in ~/.config/nvim/autoload/vim-radio/vim-
 ```
 
 To be able to listen to the music in background we need the async jobs, and for convenience you can 
-add the following to your dotfiles.  
+add the following to your dotfiles (Edit the path to your Plugins, if they are in other locations).  
 ###VIM
 ```vim
-nmap <leader>r :let job1 = job_start(['bash','-c','python3 ~/.config/nvim/autoload/vim-radio/vim-radio/vim-radio.py 0'])
+nmap <leader>r :let job1 = job_start(['bash','-c','python3 ~/.vim/plugged/vim-radio/vim-radio/vim-radio.py 0'])
 nmap <leader>s :call job_stop(job1)<CR>
 ```
 ###NEOVIM
