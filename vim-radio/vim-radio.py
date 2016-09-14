@@ -2,9 +2,10 @@ import os
 import csv
 import platform
 import argparse
+import sys
 from subprocess import call
 
-with open(os.getcwd()+'/streams.csv', 'r') as f:
+with open(os.path.dirname(os.path.realpath(sys.argv[0]))+'/streams.csv', 'r') as f:
   reader = csv.reader(f)
   streamlist = list(reader)
 parser = argparse.ArgumentParser()
