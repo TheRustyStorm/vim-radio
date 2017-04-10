@@ -1,5 +1,5 @@
 # vim-radio
-Listen to internet radio in neovim
+Listen to internet radio in vim8/neovim
 
 ### What is this
 With this plugin you are able to listen to radio-streams inside your favorite text editor on Unix.
